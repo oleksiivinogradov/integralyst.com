@@ -36,12 +36,12 @@ export function BranchSelector() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto">
           {branches.map((branch) => (
             <a 
               key={branch.code}
               href={branch.path}
-              className="block transform transition-all hover:scale-105"
+              className="block md:flex-1 transform transition-all hover:scale-105"
             >
               <Card className="text-center hover:shadow-2xl transition-all cursor-pointer border-2 hover:border-blue-300 h-full">
                 <CardHeader className="space-y-4 py-12">
