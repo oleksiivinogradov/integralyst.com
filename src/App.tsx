@@ -34,6 +34,12 @@ export default function App() {
     };
   }, []);
 
+  // Redirect from root to /us
+  if (currentPath === "/") {
+    window.history.replaceState({}, "", "/us");
+    setCurrentPath("/us");
+  }
+
   // Determine which component to render based on path
   if (currentPath === "/il") {
     return <MainSite countryCode="IL" />;
