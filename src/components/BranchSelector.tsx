@@ -31,12 +31,12 @@ export function BranchSelector() {
           <div className="flex items-center justify-center mb-6">
             <Logo size="large" />
           </div>
-          <p className="text-xl sm:text-2xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
             Choose your region to get started
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {branches.map((branch) => (
             <a 
               key={branch.code}
