@@ -1,4 +1,5 @@
 import { Mail, Calendar, Send } from "lucide-react";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
@@ -6,9 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-8">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg"></div>
-              <span className="text-xl">Integralyst</span>
+            <div className="flex items-center justify-center mb-4">
+              <Logo />
             </div>
             <p className="text-gray-400">
               Transforming businesses through intelligent AI solutions.
