@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 import { Card, CardHeader, CardTitle } from "./ui/card";
 import { Logo } from "./Logo";
 import { ArrowRight, Sparkles, Lightbulb, BarChart, Code, Zap } from "lucide-react";
@@ -45,8 +46,21 @@ export function BranchSelector() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <div className="container mx-auto px-4 py-16">
+    <>
+      <Helmet>
+        <title>Integralyst - AI Integration and AI Consulting</title>
+        <meta name="description" content="Integralyst provides expert AI integration and AI consulting services to transform your business. We help you leverage artificial intelligence for growth and innovation." />
+        <link rel="canonical" href="https://integralyst.com/" />
+        <meta property="og:title" content="Integralyst - AI Integration and AI Consulting" />
+        <meta property="og:description" content="Integralyst provides expert AI integration and AI consulting services to transform your business." />
+        <meta property="og:url" content="https://integralyst.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Integralyst - AI Integration and AI Consulting" />
+        <meta name="twitter:description" content="Integralyst provides expert AI integration and AI consulting services to transform your business." />
+      </Helmet>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-6">
             <Logo size="large" />
@@ -123,7 +137,8 @@ export function BranchSelector() {
             .
           </p>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
